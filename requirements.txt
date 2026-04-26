@@ -1,0 +1,7 @@
+groq
+sentence-transformers
+torch
+numpy
+scikit-learn
+matplotlib
+pandas

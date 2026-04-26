@@ -1,0 +1,7 @@
+Domain,Decision Accuracy (%),Avg Uncertainty,Queries
+coding,83.3,0.3598,6
+food,100.0,0.2982,6
+general_qa,83.3,0.2446,6
+shopping,66.7,0.4762,6
+travel,83.3,0.3921,6
+writing,80.0,0.4337,5

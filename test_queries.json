@@ -1,0 +1,247 @@
+[
+  {
+    "id": 1,
+    "query": "I need a laptop",
+    "domain": "shopping",
+    "expected_label": "ambiguous",
+    "notes": "No budget, use case, or specs mentioned"
+  },
+  {
+    "id": 2,
+    "query": "I need a ThinkPad T14 with 16GB RAM and 512GB SSD",
+    "domain": "shopping",
+    "expected_label": "clear",
+    "notes": "Fully specified request"
+  },
+  {
+    "id": 3,
+    "query": "Get me headphones",
+    "domain": "shopping",
+    "expected_label": "ambiguous",
+    "notes": "No type, budget, or use case"
+  },
+  {
+    "id": 4,
+    "query": "I want the Sony WH-1000XM5 in black, over-ear, wireless",
+    "domain": "shopping",
+    "expected_label": "clear",
+    "notes": "Exact product, color, and specs"
+  },
+  {
+    "id": 5,
+    "query": "I need a new phone",
+    "domain": "shopping",
+    "expected_label": "ambiguous",
+    "notes": "No OS, brand, budget, or features mentioned"
+  },
+  {
+    "id": 6,
+    "query": "Find me an iPhone 15 Pro Max 256GB in natural titanium unlocked",
+    "domain": "shopping",
+    "expected_label": "clear",
+    "notes": "Fully specified model, storage, color, carrier"
+  },
+  {
+    "id": 7,
+    "query": "Book me a flight to Portland",
+    "domain": "travel",
+    "expected_label": "ambiguous",
+    "notes": "No dates, origin city, class, or airline"
+  },
+  {
+    "id": 8,
+    "query": "Book a window seat on Delta flight 402 from JFK to PDX on June 15 economy class",
+    "domain": "travel",
+    "expected_label": "clear",
+    "notes": "Airline, flight number, route, date, seat, and class specified"
+  },
+  {
+    "id": 9,
+    "query": "I want to go on vacation somewhere warm",
+    "domain": "travel",
+    "expected_label": "ambiguous",
+    "notes": "No destination, dates, budget, or activities"
+  },
+  {
+    "id": 10,
+    "query": "Find me a hotel in downtown Chicago for 2 adults from July 10-14 under $200 per night",
+    "domain": "travel",
+    "expected_label": "clear",
+    "notes": "Location, dates, guests, and budget all specified"
+  },
+  {
+    "id": 11,
+    "query": "I need a flight for next week",
+    "domain": "travel",
+    "expected_label": "ambiguous",
+    "notes": "No origin, destination, exact date, or preferences"
+  },
+  {
+    "id": 12,
+    "query": "Book me a round-trip flight from Phoenix to Seattle departing Aug 1 returning Aug 5 on Alaska Airlines",
+    "domain": "travel",
+    "expected_label": "clear",
+    "notes": "Complete travel details provided"
+  },
+  {
+    "id": 13,
+    "query": "Write code to store user data",
+    "domain": "coding",
+    "expected_label": "ambiguous",
+    "notes": "No language, database, schema, or context"
+  },
+  {
+    "id": 14,
+    "query": "Write a Python function that inserts a user dict with keys name, email, age into a PostgreSQL users table using psycopg2",
+    "domain": "coding",
+    "expected_label": "clear",
+    "notes": "Language, library, schema, and operation fully specified"
+  },
+  {
+    "id": 15,
+    "query": "Help me build an API",
+    "domain": "coding",
+    "expected_label": "ambiguous",
+    "notes": "No framework, language, endpoints, or purpose"
+  },
+  {
+    "id": 16,
+    "query": "Write a Flask REST endpoint POST /api/users that validates a JSON body with fields name (string, required) and email (string, required) and returns 201 on success",
+    "domain": "coding",
+    "expected_label": "clear",
+    "notes": "Framework, route, method, validation, and response all specified"
+  },
+  {
+    "id": 17,
+    "query": "Fix my code",
+    "domain": "coding",
+    "expected_label": "ambiguous",
+    "notes": "No code provided, no language, no error description"
+  },
+  {
+    "id": 18,
+    "query": "Debug this Python TypeError: unsupported operand type(s) for +: 'int' and 'str' on line 42 of my data_processor.py where I'm concatenating user_id with a prefix string",
+    "domain": "coding",
+    "expected_label": "clear",
+    "notes": "Error, language, file, line number, and context provided"
+  },
+  {
+    "id": 19,
+    "query": "Tell me about Mercury",
+    "domain": "general_qa",
+    "expected_label": "ambiguous",
+    "notes": "Could be the planet, element, car brand, or mythology"
+  },
+  {
+    "id": 20,
+    "query": "What is the surface temperature of the planet Mercury during daytime?",
+    "domain": "general_qa",
+    "expected_label": "clear",
+    "notes": "Specific entity and specific fact requested"
+  },
+  {
+    "id": 21,
+    "query": "Explain the thing with cells",
+    "domain": "general_qa",
+    "expected_label": "ambiguous",
+    "notes": "Could be biology, batteries, spreadsheets, prison cells"
+  },
+  {
+    "id": 22,
+    "query": "Explain the process of mitosis in human somatic cells including the four main phases",
+    "domain": "general_qa",
+    "expected_label": "clear",
+    "notes": "Specific biological process, context, and scope defined"
+  },
+  {
+    "id": 23,
+    "query": "What happened in 1969?",
+    "domain": "general_qa",
+    "expected_label": "ambiguous",
+    "notes": "Many events happened; no topic area specified"
+  },
+  {
+    "id": 24,
+    "query": "What was the date and mission name of the first crewed Moon landing by NASA?",
+    "domain": "general_qa",
+    "expected_label": "clear",
+    "notes": "Specific event, organization, and requested details clear"
+  },
+  {
+    "id": 25,
+    "query": "Make me dinner",
+    "domain": "food",
+    "expected_label": "ambiguous",
+    "notes": "No cuisine, dietary restrictions, ingredients, or servings"
+  },
+  {
+    "id": 26,
+    "query": "Give me a recipe for chicken tikka masala for 4 people with a prep time under 30 minutes",
+    "domain": "food",
+    "expected_label": "clear",
+    "notes": "Dish, servings, and time constraint specified"
+  },
+  {
+    "id": 27,
+    "query": "Suggest something healthy to eat",
+    "domain": "food",
+    "expected_label": "ambiguous",
+    "notes": "No meal type, dietary preferences, or calorie targets"
+  },
+  {
+    "id": 28,
+    "query": "Give me a vegan high-protein lunch recipe under 500 calories with no soy or nuts",
+    "domain": "food",
+    "expected_label": "clear",
+    "notes": "Diet, meal, calories, and allergens all specified"
+  },
+  {
+    "id": 29,
+    "query": "What can I make with stuff in my fridge?",
+    "domain": "food",
+    "expected_label": "ambiguous",
+    "notes": "No ingredients listed, no dietary info"
+  },
+  {
+    "id": 30,
+    "query": "Give me a 20-minute pasta recipe using cherry tomatoes, garlic, basil, and parmesan for 2 servings",
+    "domain": "food",
+    "expected_label": "clear",
+    "notes": "Ingredients, time, and servings all provided"
+  },
+  {
+    "id": 31,
+    "query": "Write an email",
+    "domain": "writing",
+    "expected_label": "ambiguous",
+    "notes": "No recipient, purpose, tone, or content"
+  },
+  {
+    "id": 32,
+    "query": "Write a thank-you email to my manager Sarah for approving my vacation request for July 10-17, keep it professional and brief",
+    "domain": "writing",
+    "expected_label": "clear",
+    "notes": "Recipient, purpose, dates, tone, and length specified"
+  },
+  {
+    "id": 33,
+    "query": "Help me with a cover letter",
+    "domain": "writing",
+    "expected_label": "ambiguous",
+    "notes": "No job title, company, skills, or experience mentioned"
+  },
+  {
+    "id": 34,
+    "query": "Write a cover letter for a Senior Data Scientist position at Google highlighting 5 years of Python and ML experience, a PhD in Statistics, and published research in NeurIPS",
+    "domain": "writing",
+    "expected_label": "clear",
+    "notes": "Role, company, qualifications, and highlights all specified"
+  },
+  {
+    "id": 35,
+    "query": "Proofread my essay",
+    "domain": "writing",
+    "expected_label": "ambiguous",
+    "notes": "No essay provided, no context about type or standards"
+  }
+]

@@ -1,0 +1,4 @@
+System,Decision Accuracy (%),Unnecessary Clarification (%),Missed Ambiguity (%),Avg Turns
+uncertainty_agent,82.9,29.4,5.6,1.63
+always_answer,48.6,0.0,100.0,1.0
+always_ask,51.4,100.0,0.0,2.0
