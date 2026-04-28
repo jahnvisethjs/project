@@ -5,3 +5,5 @@ venv/
 cache/
 *.egg-info/
 .git_backup/
+
+claude_code_instructions.md
